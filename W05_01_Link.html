@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: Various Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d63384;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .blue {
+            border: 2px solid #0d6efd;
+        }
+
+        .pink {
+            border: 2px solid #d63384;
+        }
+
+        .orange {
+            border: 2px solid #fd7e14;
+        }
+
+        .green {
+            border: 2px solid #198754;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card2 {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #0d6efd;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 14px;
+            background: #0d6efd;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn.orange {
+            background: #fd7e14;
+        }
+
+        .btn.green {
+            background: #198754;
+        }
+
+        code {
+            background: #e9ecef;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background: #f1f3f5;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        img {
+            width: 200px;
+        }
+        footer {
+                background-color: rgb(204, 255, 191);
+            text-align: left;
+            padding: 10px;
+            font-size: 16px;
+            }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Workshop: Various Links</h1>
+    <p class="subtitle">
+        ตัวอย่างการใช้งานลิงก์ประเภทต่าง ๆ ในภาษา HTML
+    </p>
+
+    <!-- 1. External Links -->
+    <div class="card blue">
+        <h2>1. External Links</h2>
+
+        <div class="card2">
+            <p>
+                External Link คือการเชื่อมโยงไปยังเว็บไซต์ภายนอก
+                โดยใช้ <code>target="_blank"</code>
+            </p>
+
+            <a href="https://www.w3schools.com" target="_blank">
+                Visit W3Schools
+            </a>
+        </div>
+
+        <pre>
+&lt;a href="https://www.w3schools.com" target="_blank"&gt;
+Visit W3Schools
+&lt;/a&gt;
+        </pre>
+    </div>
+
+    <!-- 2. Internal / Anchor Links -->
+    <div class="card blue">
+        <h2>2. Internal / Anchor Links</h2>
+
+        <p>ใช้สำหรับเลื่อนไปยังตำแหน่งภายในหน้าเว็บเดียวกัน</p>
+
+        <pre>
+&lt;a href="#target-section"&gt;
+Go to Target Section
+&lt;/a&gt;
+        </pre>
+
+        <a class="btn" href="#target-section">
+            Go to Target Section
+        </a>
+    </div>
+
+    <div class="card2" id="target-section">
+        <h3>Target Section</h3>
+        <p>ตำแหน่งปลายทางของ Anchor Link</p>
+    </div>
+
+    <!-- 3. Email Links -->
+    <div class="card pink">
+        <h2>3. Email Links</h2>
+
+        <pre>
+&lt;a href="mailto:student@example.com?subject=Hello"&gt;
+Send an Email
+&lt;/a&gt;
+        </pre>
+
+        <a class="btn" href="mailto:student@example.com?subject=Hello">
+            Send an Email
+        </a>
+
+        <div class="note">
+            ลิงก์นี้จะเปิดโปรแกรมอีเมลของผู้ใช้โดยอัตโนมัติ
+        </div>
+    </div>
+
+    <!-- 4. Download Links -->
+    <div class="card orange">
+        <h2>4. Download Links</h2>
+
+        <pre>
+&lt;a href="files/sample.txt" download&gt;
+Download File
+&lt;/a&gt;
+        </pre>
+
+        <a class="btn orange" href="files/sample.txt" download>
+            Download Text File
+        </a>
+
+        <div class="note">
+            ใช้ <code>download</code> เพื่อบังคับให้ไฟล์ถูกดาวน์โหลด
+        </div>
+    </div>
+
+    <!-- 5. Button Links -->
+    <div class="card green">
+        <h2>5. Button Links</h2>
+
+        <pre>
+&lt;a href="https://www.example.com" class="btn green"&gt;
+Visit Website
+&lt;/a&gt;
+        </pre>
+
+        <a class="btn green" href="https://www.example.com" target="_blank">
+            Visit Website
+        </a>
+
+        <div class="note">
+            เป็นลิงก์ที่ตกแต่งให้มีลักษณะเหมือนปุ่ม
+        </div>
+    </div>
+
+    <!-- 6. Image Links -->
+    <div class="card green">
+        <h2>6. Image Links</h2>
+
+        <pre>
+&lt;a href="https://www.youtube.com"&gt;
+&lt;img src="images/youtube.png" alt="YouTube"&gt;
+&lt;/a&gt;
+        </pre>
+
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="images/youtube.png" alt="YouTube">
+        </a>
+
+        <div class="note">
+            คลิกรูปภาพเพื่อเปิดเว็บไซต์
+        </div>
+    </div>
+    <footer>
+            <a href="index.html" class="back-btn">⬅ กลับหน้า Index</a>
+        </footer>
+</div>
+
+</body>
+</html>
