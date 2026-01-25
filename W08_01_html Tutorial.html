@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>รายงานผลการเรียน</title>
+
+<style>
+body{
+    font-family: Tahoma, sans-serif;
+    background:#000;
+    margin:0;
+    padding:0;
+}
+.container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+}
+.card{
+    background:#4cff06;
+    border-radius:12px;
+    padding:25px 30px;
+    margin-bottom:40px;
+    box-shadow:0 4px 12px rgba(255,255,255,0.4);
+    border-top:4px solid #fff;
+}
+h1{
+    text-align:center;
+    color:#fff;
+    
+}
+.profile p{
+    margin:8px 0;
+    font-size:16px;
+}
+.profile strong{
+    font-weight:700;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+}
+th,td{
+    border:1px solid #ccc;
+    padding:8px;
+    font-size:14px;
+}
+thead th{
+    background:#0b1fa8;
+    color:#fff;
+    text-align:center;
+}
+.subhead th{
+    background:#e6e9ff;
+}
+.center{text-align:center;}
+.gpa-box{
+    margin-top:15px;
+}
+.gpa-box th{
+    background:#f0f0f0;
+}
+.gpa-value{
+    font-size:18px;
+    font-weight:bold;
+}
+.profile-card{
+    background: linear-gradient(135deg, #4cff06, #a8ff78);
+}
+
+.profile-title{
+    text-align:center;
+    color:#000000;
+    
+    margin-bottom:30px;
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:18px 30px;
+}
+
+.profile-item{
+    background:#ffffffcc;
+    padding:14px 18px;
+    border-radius:10px;
+}
+
+.label{
+    display:block;
+    font-size:13px;
+    color:#555;
+    margin-bottom:4px;
+}
+
+.value{
+    font-size:16px;
+    font-weight:600;
+    color:#000;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+
+<div class="card profile-card">
+    <h1 class="profile-title">ประวัติส่วนตัว</h1>
+
+    <div class="profile-grid">
+        <div class="profile-item">
+            <span class="label">ชื่อ–นามสกุล</span>
+            <span class="value">นาย ภูริทัต พลศรี</span>
+        </div>
+
+        <div class="profile-item">
+            <span class="label">รหัสนักศึกษา</span>
+            <span class="value">674230022</span>
+        </div>
+
+        <div class="profile-item">
+            <span class="label">มหาวิทยาลัย</span>
+            <span class="value">มหาวิทยาลัยราชภัฏนครปฐม</span>
+        </div>
+
+        <div class="profile-item">
+            <span class="label">คณะ</span>
+            <span class="value">วิทยาศาสตร์และเทคโนโลยี</span>
+        </div>
+
+        <div class="profile-item">
+            <span class="label">สาขา</span>
+            <span class="value">เทคโนโลยีสารสนเทศ</span>
+        </div>
+
+        <div class="profile-item">
+            <span class="label">หมู่เรียน</span>
+            <span class="value">67/43</span>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card">
+<table>
+<thead>
+<tr><th colspan="5">ภาคการศึกษาที่ 1/2567</th></tr>
+</thead>
+<tr class="subhead">
+<th>รหัสวิชา</th><th>ชื่อวิชา</th><th>Sec.</th><th>หน่วยกิต</th><th>เกรด</th>
+</tr>
+<tr><td class="center">1500001</td><td>ภาษาอังกฤษเพื่อการสื่อสารในสังคม 1</td><td class="center">67/43</td><td class="center">0</td><td class="center">P</td></tr>
+<tr><td class="center">1500204</td><td>การสื่อสารอย่างผู้นำ</td><td class="center">67/43</td><td class="center">3</td><td class="center">C+</td></tr>
+<tr><td class="center">2500201</td><td>จิตวิญญาณราชภัฏนครปฐม</td><td class="center">67/43</td><td class="center">3</td><td class="center">C+</td></tr>
+<tr><td class="center">7201101</td><td>คณิตศาสตร์และสถิติสำหรับเทคโนโลยีสารสนเทศ</td><td class="center">67/43</td><td class="center">3</td><td class="center">E</td></tr>
+<tr><td class="center">7201102</td><td>ระบบคอมพิวเตอร์</td><td class="center">67/43</td><td class="center">3</td><td class="center">E</td></tr>
+<tr><td class="center">7201103</td><td>หลักการเขียนโปรแกรมคอมพิวเตอร์</td><td class="center">67/43</td><td class="center">3</td><td class="center">D+</td></tr>
+<tr><td class="center">7201401</td><td>โปรแกรมสำเร็จรูปมัลติมีเดีย</td><td class="center">67/43</td><td class="center">3</td><td class="center">D+</td></tr>
+</table>
+<table class="gpa-box">
+<tr><th>GPA</th></tr>
+<tr><td class="center gpa-value">2.00</td></tr>
+</table>
+</div>
+
+
+<div class="card">
+<table>
+<thead>
+<tr><th colspan="5">ภาคการศึกษาที่ 2/2567</th></tr>
+</thead>
+<tr class="subhead">
+<th>รหัสวิชา</th><th>ชื่อวิชา</th><th>Sec.</th><th>หน่วยกิต</th><th>เกรด</th>
+</tr>
+<tr><td class="center">1500002</td><td>ภาษาอังกฤษเพื่อการสื่อสารในสังคม 2</td><td class="center">67/43</td><td class="center">0</td><td class="center">P</td></tr>
+<tr><td class="center">2000201</td><td>ปรัชญาของเศรษฐกิจพอเพียง</td><td class="center">67/43</td><td class="center">3</td><td class="center">B</td></tr>
+<tr><td class="center">2000202</td><td>สืบสานแห่งชีวิต</td><td class="center">67/43</td><td class="center">3</td><td class="center">C</td></tr>
+<tr><td class="center">4000201</td><td>เทคโนโลยีดิจิทัลและนวัตกรรม</td><td class="center">67/43</td><td class="center">3</td><td class="center">B</td></tr>
+<tr><td class="center">7201301</td><td>เครือข่ายคอมพิวเตอร์เบื้องต้น</td><td class="center">67/43</td><td class="center">3</td><td class="center">C</td></tr>
+<tr><td class="center">7201402</td><td>การเขียนโปรแกรมแบบเชิงภาพ</td><td class="center">67/43</td><td class="center">3</td><td class="center">C</td></tr>
+<tr><td class="center">7202105</td><td>การประยุกต์คอมพิวเตอร์ด้านสารสนเทศ</td><td class="center">67/43</td><td class="center">3</td><td class="center">D+</td></tr>
+</table>
+<table class="gpa-box">
+<tr><th>GPA</th></tr>
+<tr><td class="center gpa-value">2.25</td></tr>
+</table>
+</div>
+
+
+<div class="card">
+<table>
+<thead>
+<tr><th colspan="5">ภาคการศึกษาที่ 1/2568</th></tr>
+</thead>
+<tr class="subhead">
+<th>รหัสวิชา</th><th>ชื่อวิชา</th><th>Sec.</th><th>หน่วยกิต</th><th>เกรด</th>
+</tr>
+<tr><td class="center">1500201</td><td>ภาษาอังกฤษเพื่อการสื่อสารทางวัฒนธรรม</td><td class="center">67/43</td><td class="center">3</td><td class="center">B</td></tr>
+<tr><td class="center">2000203</td><td>การบริหารจัดการในศตวรรษที่ 21</td><td class="center">67/43</td><td class="center">3</td><td class="center">A</td></tr>
+<tr><td class="center">4000203</td><td>ฟิต ฟอร์ม เฟิร์ม</td><td class="center">67/43</td><td class="center">3</td><td class="center">B</td></tr>
+<tr><td class="center">7201101</td><td>คณิตศาสตร์และสถิติสำหรับเทคโนโลยีสารสนเทศ</td><td class="center">68/45</td><td class="center">3</td><td class="center">C</td></tr>
+<tr><td class="center">7201102</td><td>ระบบคอมพิวเตอร์</td><td class="center">68/45</td><td class="center">3</td><td class="center">C</td></tr>
+<tr><td class="center">7202302</td><td>ระบบปฏิบัติการ</td><td class="center">67/43</td><td class="center">3</td><td class="center">C+</td></tr>
+<tr><td class="center">7202303</td><td>โครงสร้างข้อมูลและฐานข้อมูล</td><td class="center">67/43</td><td class="center">3</td><td class="center">D+</td></tr>
+<tr><td class="center">7203803</td><td>การพาณิชย์อิเล็กทรอนิกส์</td><td class="center">67/43</td><td class="center">3</td><td class="center">B</td></tr>
+</table>
+<table class="gpa-box">
+<tr><th>GPA</th></tr>
+<tr><td class="center gpa-value">2.62</td></tr>
+</table>
+</div>
+
+</div>
+</body>
+</html>
