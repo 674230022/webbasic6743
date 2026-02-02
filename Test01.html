@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(41, 255, 69);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+
+            margin: 0px auto 20px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgb(156, 157, 255);
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+
+        }
+
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.986);
+            border-radius: 12px;
+            padding: 15px 35px;
+            margin-bottom: 20px;
+            margin: 0px auto 20px;
+            max-width: 900px;
+
+        }
+
+        .card-1 {
+            background-color: rgb(143, 97, 13);
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            margin: 10px -10px;
+            color: white;
+            font-size: 16px;
+
+        }
+        .card-2 {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0px;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .card-2 ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0px;
+            justify-content: center;
+        }
+        .card-2 li {
+            margin-top: 25px;
+            transition: transform 0.3;
+        }
+
+        .card-2 li:hover {
+            transform: translate(-5px);
+        }
+        .card-2 a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            background-color: rgb(123, 255, 0);
+
+            padding: 12px 12px;
+
+            border-radius: 6px;
+        }
+
+        .card-2 a:hover {
+            box-shadow: 0 4px 12px rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+        }
+
+        .list-menu ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin: 0px;
+            justify-content: center;
+        }
+
+        .list-menu li {
+            margin-top: 25px;
+            transition: transform 0.3;
+        }
+
+        .list-menu li:hover {
+            transform: translate(-5px);
+        }
+
+        .list-menu a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            background-color: rgb(123, 255, 0);
+
+            padding: 12px 12px;
+
+            border-radius: 6px;
+        }
+
+        .list-menu a:hover {
+            background-color: rgb(255, 112, 46);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .card :hover {
+            transform: translate(-7px);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+        .card-3 {
+            background-color: rgba(0, 0, 0, 0.986);
+            border-radius: 12px;
+            padding: 15px 35px;
+            margin-bottom: 20px;
+            margin: 0px auto 20px;
+            max-width: 900px;
+            color: white;
+            box-shadow: 0 4px 12px rgb(255, 255, 255);
+
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>รายงานผลเกรด</h1>
+    <div class="container">
+
+        
+
+
+    </div>
+    <div class="card">
+        <div class="list-menu">
+            <ul>
+                <li><a href="#s1">ข้อมูลนักศึกษา</a></li>
+                <li><a href="#s2">ผลการเรียน</a></li>
+                <li><a href="#s3">ติดต่อ</a></li>
+
+            </ul>
+        </div>
+</div>
+        <div class="card">
+            
+            <div class="card-1">
+                
+                <h2>Poorithat polsri</h2>
+                <span style="font-weight: bold;">รหัสนักศึกษา</span> <span> : 674230022 </span><br>
+                <span style="font-weight: bold;">ชื่อ–นามสกุล</span> <span> : นาย ภูริทัต พลศรี </span><br>
+                <span style="font-weight: bold;">หมู่เรียน</span> <span> : 67/43 </span><br>
+                <span style="font-weight: bold;">อาจารย์ทีปรึกษา</span> <span> : อาจารย์ พิชยา สุขปลั่ง </span><br>
+                <span style="font-weight: bold;">Github</span> <span> : </span><br>
+
+            </div>
+        
+
+    </div>
+    <div class="card-2">
+
+        <ul>
+                <li><a href="#s1">ปี 1 เทอม 1 : 2.00</a></li>
+                <li><a href="#s2">ปี 1 เทอม 2 : 2.25</a></li>
+                <li><a href="#s3">ปี 2 เทอม 1 : 2.62</a></li>
+
+            </ul>
+
+
+    </div>
+    <div class="card-3">
+        <p style="font-size: 40px;">เกรดเฉลี่ยสะสม : 2.50</p>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Webmaster By Pooriphat Polsri</p>
+        <p>Nakornpathom rajabhat University</p>
+    </footer>
+</body>
