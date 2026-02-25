@@ -18,6 +18,7 @@ html {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
+  
 }
 
 a {
@@ -186,10 +187,12 @@ a:hover {
 }
 
 /*page section*/
-.contant-grid {
+.content-grid {
   display: grid;
   grid-template-columns: 2fr 0.9fr;
   gap: 20px;
+  background-color: #c2dbff;
+  
 }
 
 .card {
@@ -206,6 +209,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin :10px 10px;
 }
 
 .card-headline {
@@ -249,6 +253,7 @@ a:hover {
   background-color: white;
   border-radius: 4px;
   padding: 18px;
+  margin: 10px;
 }
 
 .widget+.widget {
@@ -425,7 +430,7 @@ a:hover {
 }
 .checkbox-item input[type="checkbox"]{
   transform: scale(1.15);
-  accent-color: rgb(0, 255, 42);
+  accent-color: rgb(255, 255, 255);
 }
 .form-textarea {
   resize: vertical;
@@ -437,16 +442,16 @@ a:hover {
   padding: 12px 30px;
   border-radius: 20px;
   cursor: pointer;
-  color: #000000;
-  background-color: white;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 10px;
   
 }
 .form-button-reset {
-  color: white;
-  background-color: #000000;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
 
 }
 .contact-form-main.card .form-button:hover {
