@@ -255,6 +255,18 @@ a:hover {
   padding: 18px;
   margin: 10px;
 }
+.widget2 {
+  background-color: rgb(208, 255, 164);
+  border-radius: 4px;
+  padding: 18px;
+  margin: 10px;
+}
+.widget3 {
+  background-color: rgb(255, 168, 86);
+  border-radius: 4px;
+  padding: 18px;
+  margin: 10px;
+}
 
 .widget+.widget {
   background-color: white;
@@ -399,7 +411,7 @@ a:hover {
   font-weight: 500;
   
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .form-group {
@@ -446,7 +458,8 @@ a:hover {
   background-color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin: 10px ;
+  
   
 }
 .form-button-reset {
