@@ -18,7 +18,6 @@ html {
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
-  
 }
 
 a {
@@ -192,7 +191,6 @@ a:hover {
   grid-template-columns: 2fr 0.9fr;
   gap: 20px;
   background-color: #c2dbff;
-  
 }
 
 .card {
@@ -201,7 +199,7 @@ a:hover {
   padding: 18px;
 }
 
-.card+.card {
+.card + .card {
   margin-top: 10px;
 }
 
@@ -209,7 +207,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin :10px 10px;
+  margin: 10px 10px;
 }
 
 .card-headline {
@@ -255,12 +253,14 @@ a:hover {
   padding: 18px;
   margin: 10px;
 }
+
 .widget2 {
   background-color: rgb(208, 255, 164);
   border-radius: 4px;
   padding: 18px;
   margin: 10px;
 }
+
 .widget3 {
   background-color: rgb(255, 168, 86);
   border-radius: 4px;
@@ -268,10 +268,53 @@ a:hover {
   margin: 10px;
 }
 
-.widget+.widget {
+.widget + .widget {
   background-color: white;
   border-radius: 4px;
   padding: 18px;
+}
+
+/* คนโพส */
+.widget-title {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.auther-photo {
+  background-color: rgb(20, 255, 20);
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  border-radius: 4px;
+}
+
+.btn-facebook {
+  background-color: rgb(255, 142, 89);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.facebook-like {
+  background-color: rgb(20, 255, 20);
+  padding: 8px 8px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad-box {
+  background-color: rgb(20, 255, 20);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  border-radius: 4px;
 }
 
 /*css for card 1 image*/
@@ -304,9 +347,11 @@ a:hover {
 }
 
 .comparison-table th {
-  background: linear-gradient(45deg,
-      rgb(0, 255, 64) 0%,
-      rgb(214, 130, 21) 100%);
+  background: linear-gradient(
+    45deg,
+    rgb(0, 255, 64) 0%,
+    rgb(214, 130, 21) 100%
+  );
   padding: 15px;
 }
 
@@ -352,8 +397,6 @@ a:hover {
   color: rgb(0, 0, 0);
   margin-bottom: 20px;
   text-align: center;
-  
-
 }
 
 .contact-form-main-card {
@@ -371,7 +414,6 @@ a:hover {
   padding: 12px 15px;
   border-radius: 8px;
   font-size: 0.9;
-
 }
 
 .contact-form-main-card .form-input,
@@ -381,43 +423,43 @@ a:hover {
   border: 2px solid black;
   color: #000000;
 }
+
 /* Focus: ฟอร์มหลัก */
 .contact-form-main-card .form-input:focus,
 .contact-form-main-card .form-select:focus,
 .contact-form-main-card .form-textarea:focus {
-    outline: none;
-    background: #fff;
-    border-color: #ffffff;
-    box-shadow: 0 0 0 3px rgb(84, 82, 211);
-    transform: translateY(-1px);
+  outline: none;
+  background: #fff;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgb(84, 82, 211);
+  transform: translateY(-1px);
 }
+
 .contact-form-main.card .form-input:focus,
 .contact-form-main.card .form-select:focus,
 .contact-form-main.card .form-textarea:focus {
-    outline: none;
-    background: #fff;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
-    transform: translateY(-1px);
+  outline: none;
+  background: #fff;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
+  transform: translateY(-1px);
 }
+
 .form-select {
   border: 2px solid #000000;
-
 }
 
 .form-label {
   font-size: 0.9rem;
   color: rgb(0, 0, 0);
   font-weight: 500;
-  
+
   display: block;
   margin-bottom: 12px;
 }
 
 .form-group {
   margin-bottom: 15px;
-
-
 }
 
 .form-row {
@@ -425,7 +467,6 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 5px;
-
 }
 
 .form-checkbox-group {
@@ -440,14 +481,17 @@ a:hover {
   gap: 10px;
   font-size: 0.85rem;
 }
-.checkbox-item input[type="checkbox"]{
+
+.checkbox-item input[type="checkbox"] {
   transform: scale(1.15);
   accent-color: rgb(255, 255, 255);
 }
+
 .form-textarea {
   resize: vertical;
   min-height: 100px;
 }
+
 .form-button {
   width: 100%;
   border: none;
@@ -458,17 +502,61 @@ a:hover {
   background-color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 600;
-  margin: 10px ;
-  
-  
+  margin: 10px;
 }
+
 .form-button-reset {
   color: rgb(0, 0, 0);
   background-color: #ffffff;
-
 }
+
 .contact-form-main.card .form-button:hover {
-background: linear-gradient(45deg, #5a67d8, #6b46c1);
-transform: translateY(-2px);
-box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+  background: linear-gradient(45deg, #5a67d8, #6b46c1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+
+:root {
+  --line: #ffffff;
+  --bg1: #ffd900bb;
+  --bg2: #ffd90057;
+  --bg3: #00ff22;
+}
+
+.wrap-table {
+  background: var(--bg2);
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 3px solid var(--line);
+}
+
+.gold-table {
+  border: 1px solid var(--line);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.gold-table thead th {
+  background-color: var(--bg1);
+}
+.gold-table tbody th {
+  background-color: var(--bg1);
+}
+
+.gold-table th,
+.gold-table td {
+  border: 1px solid black;
+  border: 3px solid var(--line);
+  padding: 10 2;
+}
+.total {
+  background-color: var(--bg3);
+}
+.footer {
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+  width: 100%;
+  height: 100px;
 }
