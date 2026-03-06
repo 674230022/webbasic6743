@@ -553,6 +553,21 @@ a:hover {
 .total {
   background-color: var(--bg3);
 }
+.gold-negative {
+  text-align: center;
+}
+.price-red {
+  color: red;
+  text-align: center;
+}
+.price-green {
+  color: green;
+  text-align: center;
+}
+.position-price-right{
+  text-align: right;
+  padding-right: 10px;
+}
 .footer {
   background-color: black;
   color: white;
